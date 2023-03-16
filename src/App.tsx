@@ -9,18 +9,12 @@ import {
   View,
 } from 'react-native';
 import {RecoilRoot} from 'recoil';
+import AppNavigator from './navigations/AppNavigator';
 
-function App(): JSX.Element {
+function App() {
   return (
     <RecoilRoot>
-      <View
-        style={{
-          flex: 1,
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}>
-        <Text>Hello, I'm InBrew!</Text>
-      </View>
+      <AppNavigator />
     </RecoilRoot>
   );
 }
