@@ -1,6 +1,12 @@
 {
-  // "extends": "@tsconfig/react-native/tsconfig.json",
   "compilerOptions": {
-    "module": "commonjs"
+    "target": "es6",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "strictNullChecks": false,
+    "jsx": "react-jsx",
+    "sourceMap": true,
+    "typeRoots": ["src/@types/types"]
   }
 }
