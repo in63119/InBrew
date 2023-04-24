@@ -1,17 +1,19 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {Text} from 'react-native';
+import styled from 'styled-components/native';
 
 const Landing = () => {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}>
+    <Container>
       <Text>Hello, It's Inbrew!</Text>
-    </View>
+    </Container>
   );
 };
 
 export default Landing;
+
+const Container = styled.View`
+  flex: 1
+  justifyContent: center;
+  alignItems: center;
+`;
